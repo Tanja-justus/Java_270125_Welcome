@@ -1,12 +1,17 @@
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+//
+//import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Test;
 
-class TestingTest {
+import static org.junit.Assert.assertEquals;
 
-    @Test
+public class TestingTest{
+
+@Test
+
     // Test Summe a+b
-    void add_expectThree_whenAPlusBEqualsThree() {
+ public void add_expectThree_whenAPlusBEqualsThree() {
 
         int a = 1;
         int b = 2;
@@ -16,8 +21,9 @@ class TestingTest {
         // then
         assertEquals(expected, actual);
     }
-    //Test ist Gerade Zahl
-    void istGerade_expectTrue_whenModuleTrueEqualsTrue() {
+    @Test
+        //Test ist Gerade Zahl
+   public void istGerade_expectTrue_whenModuleTrueEqualsTrue() {
 
         int a = 10;
         boolean expected =true;
@@ -26,16 +32,17 @@ class TestingTest {
     }
 
     //Test hat Gross gemacht
-
-    void istGross_expectText_whenTEXTEqualsTEXT() {
+    @Test
+     public void istGross_expectText_whenTEXTEqualsTEXT() {
 
         String a = "Text";
         String expected ="TEXT";
         String actual = Testing.textGross(a);
         assertEquals(expected, actual);
     }
+    @Test
 // Test ist  Zahl -Positiv
-    void istPositiv_expectTrue_whenPositivTrueEqualsTrue() {
+    public void istPositiv_expectTrue_whenPositivTrueEqualsTrue() {
 
         int a = 7;
         boolean expected =true;
